@@ -22,6 +22,6 @@ message.channel.send("this")
 }					
 });					
 					
-Client.login("OTY5MDM4NDM4NzcyOTI0NDc2.YmnlXw.XYuzXj11jjqz3ha024--uSbFwgw")	
+Client.login("")	
 
 npm i discord.js@12.5.3
