@@ -1,27 +1,29 @@
-let Client = new Discord.Client();					
-					
-Client.on("ready" , () => {					
-Client.user.setPresence({ activity: { name: "SKZOO" } })					
-					
-})					
-					
-Client.on("message", message => {					
-if (message.content === "ping") {					
-message.channel.send("pong")					
-}					
-if (message.content === "embed") {					
-let embed = new Discord.MessageEmbed()					
-.setTitle("This is Embed Title")					
-.setDescription("This is Embed description")					
-.setColor("RANDOM")					
-.setFootor("This is Embed Footer");					
-message.channel.send(embed);					
-}					
-if (message.content === "my2ndcommand") {					
-message.channel.send("this")					
-}					
-});					
-					
-Client.login("")	
+let Discord = require("discord.js");																									
+let Client = new Discord.Client();																									
+																									
+Client.on("ready" , () => {																									
+Client.user.setPresence({ activity: { name: "SKZOO" } })																									
+																									
+})																									
+																									
+Client.on("message", message => {																									
+if (message.content === "ping") {																									
+message.channel.send("pong")																									
+}																									
+if (message.content === "embed") {																									
+let embed = new Discord.MessageEmbed()																									
+.setTitle("This is Embed Title")																									
+.setDescription("This is Embed description")																									
+.setColor("RANDOM")																									
+.setFootor("This is Embed Footer");																									
+message.channel.send(embed);																									
+}																									
+if (message.content === "my2ndcommand") {																									
+message.channel.send("this")																									
+}																									
+});																									
+																									
+Client.login("")																									
+																										
 
 npm i discord.js@12.5.3
