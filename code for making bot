@@ -2,9 +2,8 @@ let Discord = require("discord.js");
 let Client = new Discord.Client();																									
 																									
 Client.on("ready" , () => {																									
-Client.user.setPresence({ activity: { name: "SKZOO" }, status: idle })																									
-																									
-})																									
+  Client.user.setPresence({ activity: { name: "MANIAC by STRAY KIDS" }, status: "dnd" })					
+})																							
 																									
 Client.on("message", message => {																									
 if (message.content === "ping") {																									
