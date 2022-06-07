@@ -6,8 +6,8 @@ Client.on("ready" , () => {
 })																							
 																									
 Client.on("message", message => {																									
-if (message.content === "ping") {																									
-message.channel.send("pong")																									
+if (message.content === "hello") {																									
+message.channel.send("hello mate")																									
 }																									
 if (message.content === "embed") {																									
 let embed = new Discord.MessageEmbed()																									
