@@ -2,7 +2,7 @@ let Discord = require("discord.js");
 let Client = new Discord.Client();																									
 																									
 Client.on("ready" , () => {																									
-Client.user.setPresence({ activity: { name: "SKZOO" } })																									
+Client.user.setPresence({ activity: { name: "SKZOO" }, status: idle })																									
 																									
 })																									
 																									
